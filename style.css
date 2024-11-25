@@ -1,0 +1,61 @@
+/* Define the custom font using @font-face */
+@font-face {
+    font-family: 'Kleisch-Regular';  /* Name the font as Kleisch-Regular */
+    src: url('fonts/Kleisch-Regular.woff') format('woff');  /* Correct the font file name */
+  
+}
+
+/* Apply the font to the body */
+body {
+    font-family: 'Kleisch-Regular', serif; /* Apply Kleisch-Regular font, with fallback to generic serif */
+    font-weight: normal;  /* Ensure normal weight */
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+    font-size: 15px;
+    line-height: 17px;
+    font-variant-numeric: oldstyle-nums;
+}
+
+h1 {
+    font-family: 'Kleisch-Regular', serif; /* Apply Kleisch-Regular font, with fallback to generic serif */
+    font-weight: normal;  /* Ensure normal weight */
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 15px;
+     line-height: 17px;
+    font-variant-numeric: oldstyle-nums;
+}
+
+
+/* Style the content */
+.content {
+    text-align: center;
+}
+
+
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #FF0000; 
+}
+
+.image-container {
+    display: flex;         /* Enables flexbox in the container */
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;   /* Centers vertically */
+    height: calc(100% - 100px);  /* The container takes the rest of the space after the text */
+}
+
+.image-container img {
+    max-width: 100%;       /* Makes sure the image resizes responsively */
+    height: auto;          /* Keeps the aspect ratio intact */
+    display: block;      
+    margin-top: 80px;      /* Moves the image down by 40px */
+  /* Ensures it behaves as a block element */
+}
